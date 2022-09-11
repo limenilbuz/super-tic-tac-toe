@@ -180,6 +180,7 @@ class Board extends React.Component {
             status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
         }
         return (
+            <div className='app'>
             <div className="game">
                 {this.renderBoard(0)}
                 {this.renderBoard(1)}
@@ -195,6 +196,16 @@ class Board extends React.Component {
                 </div>
                 <div></div>
                 <Reset onClick={() => this.handleReset()}/>
+            </div>
+            <ul>
+                <li>Super tic tac toe</li>
+                <li>The classic game reimagined.</li>
+                <li>Rules:</li>
+                <li>The first player starts on the middle board.</li>
+                <li>When you place down a tile, the next player must play on the board that corresponds to the tile's position.</li>
+                <li>Once a board has a tic tac toe, that player claims that whole board.</li>
+                <li>Create a tic tac toe with the boards to win!</li>
+            </ul>
             </div>
         );
     }
