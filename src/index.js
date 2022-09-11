@@ -204,6 +204,7 @@ class Board extends React.Component {
                 <li>The first player starts on the middle board.</li>
                 <li>When you place down a tile, the next player must play on the board that corresponds to the tile's position.</li>
                 <li>Once a board has a tic tac toe, that player claims that whole board.</li>
+                <li>If a player places down a tile in which that board is already claimed, the next player gets to choose a board.</li>
                 <li>Create a tic tac toe with the boards to win!</li>
             </ul>
             </div>
