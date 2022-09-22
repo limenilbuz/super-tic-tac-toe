@@ -103,7 +103,7 @@ class Board extends React.Component {
 
         let nextBoard;
 
-        if (this.state.claims[j] !== null) {
+        if (claims[j] !== null) {
             nextBoard = null;
         }
         else {
